@@ -19,5 +19,6 @@ module.exports = async function handler(req, res) {
   } catch (e) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.status(500).json({ error: e.message });
+    
   }
 };
